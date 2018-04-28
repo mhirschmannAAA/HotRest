@@ -16,15 +16,15 @@ module.exports = function(app) {
   // ---------------------------------------------------------------------------
 
   app.get("view.html", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/view.html"));
+    res.sendFile(path.join(__dirname, "view.html"));
   });
 
   app.get("makeReservation.html", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/makeReservation.html"));
+    res.sendFile(path.join(__dirname, "makeReservation.html"));
   });
 
   // If no matching route is found default to home
   app.get("*", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/homepage.html"));
+    res.sendFile(path.join(__dirname, "index.html"));
   });
 };
