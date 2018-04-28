@@ -35,7 +35,7 @@ app.post("/api/tables", function(req, res) {
     }
 });
 
-require("htmlRoutes")(app);
+require("htmlRoutes.js")(app);
 
 // Starts the server to begin listening
 // =============================================================
